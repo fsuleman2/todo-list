@@ -8,7 +8,8 @@ import { Todo } from 'src/app/Todo';
 })
 export class TodoItemComponent implements OnInit {
   @Input()
-  todo: Todo = new Todo;
+  todo!: Todo;
+  /********************************************** */
   @Output()
   todoDelete:EventEmitter<Todo> =  new EventEmitter();
   constructor() { }

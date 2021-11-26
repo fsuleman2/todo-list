@@ -33,7 +33,13 @@ export class TodosComponent implements OnInit {
 deleteTodo(todo:Todo){
   console.log(todo);
   let index = this.todos.indexOf(todo);
-  this.todos.splice(index,1);
+  this.todos.splice(index,1); //splic(index,count)to delete an specific element in an array
   console.log("todo deleted")
+}
+//adding a Todo
+addTodo(todo:Todo){
+  console.log(todo);
+  this.todos.push(todo);
+  console.log("todo added")
 }
 }
