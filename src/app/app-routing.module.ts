@@ -1,13 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './MyComponents/about/about.component';
+import { TodosComponent } from './MyComponents/todos/todos.component';
 
 const routes: Routes = [
   {
-    path: 'about',
-    component: AboutComponent,
+    path: '',
+    component: TodosComponent,
     pathMatch: 'full',
-  }
+  },
+  {
+    path:'about',
+    component:AboutComponent
+  },
 ];
 
 @NgModule({
